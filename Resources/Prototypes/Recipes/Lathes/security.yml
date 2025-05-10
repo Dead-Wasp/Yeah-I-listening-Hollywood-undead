@@ -710,3 +710,15 @@
      Plastic: 1000
      Plasma: 500
      Glass: 500
+
+# Sunflower Hardsuit
+- type: latheRecipe
+  id: SecuritySunflowersecurityHardSuit
+  result: ClothingOuterHardsuitTitaniumPetal
+  completetime: 20
+  materials:
+    Steel: 3000
+    Plastic: 800
+    Glass: 1200
+    Plasma: 500
+    Uranium: 2000

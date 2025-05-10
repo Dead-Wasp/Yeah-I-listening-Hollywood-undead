@@ -755,7 +755,7 @@
     radius: 5
     energy: 2
 
-#Sunflower Hardsuit
+#Sunflower Hardsuits
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHelioSphere
@@ -768,3 +768,29 @@
     sprite: Clothing/Head/Hardsuits/heliosphere.rsi
   - type: Tag
     id: SentiflowerWearable
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+    
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetTitaniumPetal
+  name: Titanium petal Hardsuit helmet
+  description: A space helmet that will allow you to continue your photosynthesis even in full vacuum and danger conditions
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/titanium-petals.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/titanium-petals.rsi
+  - type: Tag
+    id: SentiflowerWearable
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8

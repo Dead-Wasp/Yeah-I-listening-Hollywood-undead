@@ -1004,7 +1004,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSanta
 
-#Sunflower's Hardsuit
+#Sunflower's Hardsuits
 - type: entity
   parent: ClothingOuterHardsuitBasic
   id: ClothingOuterHelioSphere
@@ -1019,3 +1019,41 @@
     clothingPrototype: ClothingHeadHelmetHelioSphere
   - type: Tag
     id: SentiflowerWearable
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingOuterHardsuitBasic
+  id: ClothingOuterHardsuitTitaniumPetal
+  name: Titanium petal Hardsuit
+  description: A space suit that will allow you to continue your photosynthesis even in full vacuum and danger conditions
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/titanium-petals.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/titanium-petals.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetTitaniumPetal
+  - type: Tag
+    id: SentiflowerWearable
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
